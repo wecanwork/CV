@@ -1,0 +1,84 @@
+
+	@prefix: cv;
+
+// CV
+// --------------------------------------------------------
+
+	@import 'reset';
+
+	html
+	{
+		-webkit-text-size-adjust: 100%;
+		   -moz-text-size-adjust: 100%;
+		    -ms-text-size-adjust: 100%;
+	}
+
+	body
+	{
+		font: 14px Lato, Sans-Serif;
+		color: #707070;
+		background: #f0f0f0;
+	}
+
+// Typography
+// --------------------------------------------------------
+
+	@import 'lato';
+	@import 'awesome';
+
+	a
+	{
+		color: #428bca;
+
+		&:hover,
+		&:focus
+		{
+			color: #2a6496;
+		}
+	}
+
+	p
+	{
+		padding: 10px 0 0;
+
+		&:first-of-type { padding: 0 }
+	}
+
+// Skeleton
+// --------------------------------------------------------
+
+	.@{prefix}
+	{
+		width: 960px;
+		padding: 25px;
+		margin: 25px auto;
+		background: #fff;
+		border: 1px solid #dfdfdf;
+		box-sizing: border-box;
+	}
+
+	.@{prefix}-accessible
+	{
+		position: absolute;
+		height: 1px;
+		width: 1px;
+  		overflow: hidden;
+  		clip: rect(1px, 1px, 1px, 1px);
+	}
+
+// Print
+// --------------------------------------------------------
+
+	@media print
+	{
+		.@{prefix}
+		{
+			margin: 0;
+			border: 0;
+		}
+	}
+
+// --------------------------------------------------------
+
+	@import 'intro';
+	@import 'background';

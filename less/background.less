@@ -1,0 +1,104 @@
+// Background
+// --------------------------------------------------------
+
+	.@{prefix}-background
+	{
+	}
+
+// Background Section
+// --------------------------------------------------------
+
+	.@{prefix}-background-section
+	{
+		padding: 10px 0 0;
+		line-height: 20px;
+
+		&:first-child { padding-top: 0 }
+	}
+
+	.@{prefix}-background-section-header
+	{
+		margin: 0 0 15px;
+		color: #707070;
+		font-size: 16px;
+		text-transform: uppercase;
+		text-decoration: none;
+		line-height: 40px;
+		border-bottom: 1px solid #dfdfdf;
+
+		&:before
+		{
+			display: block;
+			float: left;
+			width: 35px;
+			padding: 0 5px 0 0;
+			font: 18px Awesome;
+			text-align: center;
+			line-height: 40px;
+		}
+	}
+
+// Background Section Item
+// --------------------------------------------------------
+
+	.@{prefix}-background-section-item
+	{
+		padding: 15px 0;
+		border-top: 1px solid #eee;
+
+		&:first-child
+		{
+			padding-top: 0;
+			border: 0;
+		}
+
+		&:last-child { padding-bottom: 0 }
+
+		ul
+		{
+			margin: 0 0 10px 30px;
+			list-style-type: circle
+		}
+
+		li { margin: 10px 0 0 }
+	}
+
+	.@{prefix}-background-section-item-header
+	{
+		padding: 0 0 10px;
+		color: #333;
+		font-weight: bold;
+	}
+
+	.@{prefix}-background-section-item-byline
+	{
+		display: block;
+		margin: -10px 0 10px;
+	}
+
+// Print
+// --------------------------------------------------------
+
+	@media print
+	{
+		.@{prefix}-background-section
+		{
+			padding: 15px 0 0;
+			line-height: 15px;
+			page-break-inside: avoid;
+
+			&:first-child { padding: 15px 0 0 }
+		}
+
+		.@{prefix}-background-section-item { page-break-inside: avoid }
+	}
+
+// Sections
+// --------------------------------------------------------
+
+	@import 'sections/about';
+	@import 'sections/awards';
+	@import 'sections/education';
+	@import 'sections/experience';
+	@import 'sections/projects';
+	@import 'sections/skills';

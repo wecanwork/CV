@@ -1,0 +1,79 @@
+// Introduction
+// --------------------------------------------------------
+
+	.@{prefix}-intro
+	{
+	}
+
+	.@{prefix}-intro-thumbnail
+	{
+		display: block;
+		width: 125px;
+		height: 125px;
+		margin: 0 auto 5px;
+		border-radius: 100%;
+	}
+
+	.@{prefix}-intro-name
+	{
+		font-size: 24px;
+		text-align: center;
+	}
+
+	.@{prefix}-intro-title
+	{
+		padding: 0 0 25px;
+		font-size: 14px;
+		color: #777;
+		text-align: center;
+	}
+
+// Contact
+// --------------------------------------------------------
+
+	.@{prefix}-intro-contact
+	{
+		overflow: hidden;
+		padding: 15px 0 10px;
+		border-top: 1px solid #dfdfdf;
+	}
+
+	.@{prefix}-intro-contact-item
+	{
+		position: relative;
+		display: block;
+		float: left;
+		width: 25%;
+		padding: 10px;
+		line-height: 20px;
+		text-align: center;
+		box-sizing: border-box;
+
+		&:before
+		{
+			display: inline;
+			margin: 0 5px 0 0;
+			font: 18px Awesome;
+			text-align: center;
+		}
+
+		&.phone    { &:before { content: @awesome-glyth-phone    } }
+		&.email    { &:before { content: @awesome-glyth-email    } }
+		&.linkedin { &:before { content: @awesome-glyth-linkedin } }
+		&.github   { &:before { content: @awesome-glyth-github   } }
+	}
+
+// Print
+// --------------------------------------------------------
+
+	@media print
+	{
+		.@{prefix}-intro-contact { padding: 15px 0 0 }
+
+		.@{prefix}-intro-contact-item
+		{
+			padding: 5px 10px 5px 35px;
+
+			&:before { line-height: 30px }
+		}
+	}
