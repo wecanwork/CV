@@ -10,4 +10,4 @@ Grunt is used to handle the build process for my CV. To perform a full build, us
 grunt build
 ```
 
-This will run also open the CV in your default browser where you can view, print or save it.
+This will also open the CV in your default browser where you can view, print or save it.

@@ -1,9 +1,9 @@
 {
-	"name" : "cv",
+	"name" : "my-cv",
 
 	"version" : "1.0.0",
 
-	"description" : "The CV of Luke S. Phillips.",
+	"description" : "The source code for my CV.",
 
 	"author" :
 	{
