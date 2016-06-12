@@ -2,7 +2,7 @@
 
 ![Travis Build Status](https://travis-ci.org/lsphillips/CV.svg?branch=master)
 
-The source code for the CV of Luke S. Phillips.
+The source code for the CV of Luke S. Phillips, which can be read here: https://lsphillips.github.io/CV/
 
 ## Development
 

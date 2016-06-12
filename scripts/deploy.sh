@@ -2,12 +2,10 @@
 
 if [ -n "$GITHUB_API_KEY" ]; then
 
-	cd "$TRAVIS_BUILD_DIR/build"
-
 	# Step into the directory containing the CV created by the
 	# build process.
-	cd "$CV_BUILD_DIRECTORY"
-
+	cd "$TRAVIS_BUILD_DIR/build"
+	
 	# Initialize the directory containing the CV as a GIT
 	# repository.
 	git init
