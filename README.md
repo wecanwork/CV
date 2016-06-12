@@ -1,5 +1,7 @@
 # The CV of Luke S. Phillips
 
+![Travis Build Status](https://travis-ci.org/lsphillips/CV.svg?branch=master)
+
 The source code for the CV of Luke S. Phillips.
 
 ## Development
