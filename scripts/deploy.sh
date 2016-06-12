@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 if [ -n "$GITHUB_API_KEY" ]; then
 
 	cd "$TRAVIS_BUILD_DIR/build"
@@ -30,7 +28,7 @@ if [ -n "$GITHUB_API_KEY" ]; then
 	#
 	# Ensure all output is suppressed; just so we don't reveal
 	# anything sensitive.
-	git push -f -q https://lsphillips:$GITHUB_API_KEY@github.com/lsphillips/CV gh-pages &2>/dev/null
+	git push -f https://lsphillips:$GITHUB_API_KEY@github.com/lsphillips/CV gh-pages
 
 	# To finish things up, go back to the build directory.
 	cd "$TRAVIS_BUILD_DIR"
