@@ -1,17 +1,13 @@
 // Introduction
 // --------------------------------------------------------
 
-	.@{prefix}-intro
-	{
-	}
-
-	.@{prefix}-intro-name
+	.@{prefix}-full-name
 	{
 		font-size: 24px;
 		text-align: center;
 	}
 
-	.@{prefix}-intro-title
+	.@{prefix}-job-title
 	{
 		padding: 0 0 25px;
 		font-size: 14px;
@@ -22,14 +18,14 @@
 // Contact
 // --------------------------------------------------------
 
-	.@{prefix}-intro-contact
+	.@{prefix}-contact
 	{
 		overflow: hidden;
 		padding: 15px 0 10px;
 		border-top: 1px solid #dfdfdf;
 	}
 
-	.@{prefix}-intro-contact-item
+	.@{prefix}-contact-item
 	{
 		position: relative;
 		display: block;
@@ -46,8 +42,8 @@
 			font: 18px Awesome;
 		}
 
-		&.phone    { &:before { content: @awesome-glyth-phone    } }
 		&.email    { &:before { content: @awesome-glyth-email    } }
+		&.phone    { &:before { content: @awesome-glyth-phone    } }
 		&.linkedin { &:before { content: @awesome-glyth-linkedin } }
 		&.github   { &:before { content: @awesome-glyth-github   } }
 	}
@@ -57,9 +53,9 @@
 
 	@media print
 	{
-		.@{prefix}-intro-contact { padding: 15px 0 0 }
+		.@{prefix}-contact { padding-bottom: 0 }
 
-		.@{prefix}-intro-contact-item
+		.@{prefix}-contact-item
 		{
 			padding: 5px 10px 5px 35px;
 

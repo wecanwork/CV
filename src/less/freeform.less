@@ -1,0 +1,36 @@
+// Freeform
+// --------------------------------------------------------
+
+	.@{prefix}-freeform
+	{
+		h4 { color: #333 }
+
+		p
+		{
+			padding: 10px 0 0;
+
+			&:first-of-type { padding: 0 }
+		}
+
+		ul,
+		ol
+		{
+			margin: 0 0 10px 30px;
+			list-style-type: circle;
+
+			&:last-child { margin-bottom: 0 }
+		}
+
+		li { margin: 10px 0 0 }
+	}
+
+// Print
+// --------------------------------------------------------
+
+	@media print
+	{
+		.@{prefix}-freeform
+		{
+			h4 { padding: 0 0 5px }
+		}
+	}

@@ -1,7 +1,7 @@
 {
 	"name" : "the-cv-of-lsphillips",
 
-	"version" : "1.0.1",
+	"version" : "2.0.0",
 
 	"description" : "The source code for the CV of Luke S. Phillips.",
 
@@ -32,11 +32,6 @@
 	{
 		"type" : "git",
 		"url" : "https://github.com/lsphillips/CV.git"
-	},
-
-	"engines" :
-	{
-		"node" : ">=4.0.0"
 	},
 
 	"private" : true

@@ -25,7 +25,7 @@ module.exports = function (grunt)
 			{
 				files :
 				{
-					'build/css/cv.css' : 'less/cv.less'
+					'build/css/cv.css' : 'src/less/index.less'
 				},
 
 				options : { compress : true }
@@ -60,7 +60,7 @@ module.exports = function (grunt)
 			{
 				files :
 				[
-					{ expand : true, src : ['assets/**', 'index.html'], dest : 'build' }
+					{ expand : true, cwd : 'src', src : ['assets/**', 'index.html'], dest : 'build' }
 				]
 			}
 		},
@@ -79,7 +79,7 @@ module.exports = function (grunt)
 
 		watch :
 		{
-			build : { files : ['assets/**', 'less/**', 'index.html'], tasks : ['less:build', 'copy:build', 'appcache:build'] }
+			build : { files : ['src/assets/**', 'src/less/**', 'src/index.html'], tasks : ['less:build', 'copy:build', 'appcache:build'] }
 		}
 	});
 
