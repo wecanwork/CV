@@ -62,3 +62,26 @@
 			&:before { line-height: 30px }
 		}
 	}
+
+// Mobile
+// --------------------------------------------------------
+	
+	@media screen and (max-width: 800px)
+	{
+		.@{prefix}-contact-item { width: 50% }
+	}
+
+	@media screen and (max-width: 500px)
+	{
+		.@{prefix}-contact-item
+		{
+			width: 100%;
+			text-align: left;
+
+			&:before
+			{
+				display: inline;
+				margin: 0 10px 0 0;
+			}
+		}
+	}
