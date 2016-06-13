@@ -88,6 +88,11 @@ module.exports = function (grunt)
 
 	grunt.registerTask('build', ['less:build', 'copy:build', 'appcache:build', 'open:build']);
 
+	// Task: `travis`
+	// -------------------------------------------------------
+
+	grunt.registerTask('travis', ['less:build', 'copy:build', 'appcache:build']);
+
 	// Task: `default`
 	// -------------------------------------------------------
 
