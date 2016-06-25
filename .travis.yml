@@ -6,6 +6,6 @@ env:
         - secure: "VSwa2pgViEfZ17QZ8AYdWzMVeveKpmNomnHiKQvvsfQJguvuz1iFuc3qAMnpELd5I5ajp8CszJn8nmaWQtckNfmWWwKnJX9o8BA7iazdSlJvs7UWoauNeas+dXfMKzQ7Yh+4HdLtRU6mP43MQs7QR0nsv9FbRM4IdxAky+LhgfrT1lpssYTN6DzZbdq8POcwQLv9jPsA96LJSO0r6JZJKQdHFwrSrqCOXqUtvjJkq7fo1gZ1dJZ5+8Y1IOAQvBd4EmDQq0TNqJLMGWNF8nbkgk8YeO3Gug/JwfUbj06yp/54Prj5fdfLydnflBv25vonlB4aR+YakrAKuPxAmZYJF4ju9N9eA9237e+Ag7THS45U89hXUKmkdlLjHm8DXweCBaiyyOzmurrTrs5Sq9enzXXPnqebhWQYR1J5fInZCoGfTJfvqQxJzTGHl6omrn5v5XlmXt9QH6a/+JkOf92Q+zl0NxlyT9w6R6RZt0z7LdQ0MvexoRtKyOSeoQIclvBM8bkOqJagDMVMcQOtWOo5HqCUQIvbgCtlQtmqFzMVB3t05LQXOx2mpcRZqhz0Di0GejKCe4Z4hK7KMEz1Z+CSQjfGJBa+u334QhTlwjw6DvStPwy/O/cQ1QBXpf7oeDlXB4mBkcp1wrmHXqwlpkidhwpA1M8f7gwLagYZ05bZ5l0="
 before_script:
     - "npm install -g grunt-cli"
-script: "grunt travis"
+script: "grunt build"
 after_success:
     - "bash ./scripts/deploy.sh"

@@ -6,9 +6,9 @@ The source code for the CV of Luke S. Phillips, which can be read here: https://
 
 ## Development
 
-Node is required to run the build. You can download and install the latest version here: https://nodejs.org/
+Node is required to run the build. You can download and install the latest version here: https://nodejs.org/.
 
-Grunt is used to facilitate the build process; install Grunt through NPM (Node Package Manager) which is installed as part of the Node installation:
+Grunt is used to facilitate the build process; you can download and install Grunt from NPM (Node Package Manager):
 
 ``` sh
 npm install -g grunt-cli
@@ -16,16 +16,28 @@ npm install -g grunt-cli
 
 This will also add `grunt` to your PATH.
 
-Next, enter the root of this project, and install the project dependencies using NPM:
+### Building
+
+First, you will need to install the project dependencies from NPM. Enter the following command whilst in the project directory:
 
 ``` sh
 npm install
 ```
 
-And last but not least, to run the build use the Grunt `build` task:
+Finally, use the Grunt `build` task to run the build:
 
 ``` sh
 grunt build
 ```
 
-This will open the CV in your default browser where you can print or save it.
+This will create a `build` directory containing the CV.
+
+### Viewing
+
+For your convenience there is the `view` Grunt task:
+
+``` sh
+grunt view
+```
+
+This will perform a standard build and open the resulting CV in your default browser where you can print or save it.

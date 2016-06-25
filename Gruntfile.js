@@ -69,7 +69,7 @@ module.exports = function (grunt)
 
 		open :
 		{
-			build :
+			view :
 			{
 				path : 'build/index.html'
 			}
@@ -86,15 +86,15 @@ module.exports = function (grunt)
 	// Task: `build`
 	// -------------------------------------------------------
 
-	grunt.registerTask('build', ['less:build', 'copy:build', 'appcache:build', 'open:build']);
+	grunt.registerTask('build', ['less:build', 'copy:build', 'appcache:build']);
 
-	// Task: `travis`
+	// Task: `view`
 	// -------------------------------------------------------
 
-	grunt.registerTask('travis', ['less:build', 'copy:build', 'appcache:build']);
+	grunt.registerTask('view', ['build', 'open:view']);
 
 	// Task: `default`
 	// -------------------------------------------------------
 
-	grunt.registerTask('default', ['build']);
+	grunt.registerTask('default', ['view']);
 };
