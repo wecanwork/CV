@@ -1,6 +1,6 @@
 # The CV of Luke S. Phillips
 
-![Travis Build Status](https://travis-ci.org/lsphillips/CV.svg?branch=master)
+![Travis Build Status](https://img.shields.io/travis/lsphillips/CV/master.svg?maxAge=900)
 
 The source code for the CV of Luke S. Phillips, which can be read here: https://lsphillips.github.io/CV/
 
