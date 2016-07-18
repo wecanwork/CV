@@ -6,7 +6,6 @@ module.exports = function (grunt)
 	grunt.loadNpmTasks('grunt-contrib-less');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-watch');
-	grunt.loadNpmTasks('grunt-appcache');
 	grunt.loadNpmTasks('grunt-open');
 
 	// Configuration
@@ -29,26 +28,6 @@ module.exports = function (grunt)
 				},
 
 				options : { compress : true }
-			}
-		},
-
-		// ------------------------------------------------------
-
-		appcache :
-		{
-			options :
-			{
-				basePath : 'build'
-			},
-
-			build :
-			{
-				dest : 'build/manifest.appcache',
-
-				cache :
-				{
-					patterns : ['build/**'],
-				}
 			}
 		},
 
@@ -79,14 +58,14 @@ module.exports = function (grunt)
 
 		watch :
 		{
-			build : { files : ['src/assets/**', 'src/less/**', 'src/index.html'], tasks : ['less:build', 'copy:build', 'appcache:build'] }
+			build : { files : ['src/assets/**', 'src/less/**', 'src/index.html'], tasks : ['less:build', 'copy:build'] }
 		}
 	});
 
 	// Task: `build`
 	// -------------------------------------------------------
 
-	grunt.registerTask('build', ['less:build', 'copy:build', 'appcache:build']);
+	grunt.registerTask('build', ['less:build', 'copy:build']);
 
 	// Task: `view`
 	// -------------------------------------------------------
