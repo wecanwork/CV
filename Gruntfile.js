@@ -39,7 +39,7 @@ module.exports = function (grunt)
 			{
 				files :
 				[
-					{ expand : true, cwd : 'src', src : ['assets/**', 'index.html', 'manifest.json', 'config.xml'], dest : 'build' }
+					{ expand : true, cwd : 'src', src : ['assets/**', 'index.html', 'manifest.json', 'config.xml', 'CNAME'], dest : 'build' }
 				]
 			}
 		},
